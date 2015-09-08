@@ -15,6 +15,7 @@ public class AddTest {
 
 	@Test
 	public void addTest() {
+		//ddd
 		System.out.println("First test");
 		int k = sm.add(5, 10);
 		assertTrue("", k == 15);
