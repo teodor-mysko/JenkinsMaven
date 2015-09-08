@@ -16,7 +16,7 @@ public class AddTest {
 	@Test
 	public void addTest() {
 		System.out.println("First test");
-		int k = sm.add(2, 10);
-		assertTrue("", k == 12);
+		int k = sm.add(3, 10);
+		assertTrue("", k == 13);
 	}
 }
