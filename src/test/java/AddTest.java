@@ -16,7 +16,7 @@ public class AddTest {
 	@Test
 	public void addTest() {
 		System.out.println("First test");
-		int k = sm.add(4, 10);
+		int k = sm.add(5, 10);
 		assertTrue("", k == 15);
 	}
 }
