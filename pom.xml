@@ -11,21 +11,46 @@
 			<version>4.11</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<outputDirectory>target/classes</outputDirectory>
-		<finalName>artifactId-version</finalName>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>2.16</version>
-			</plugin>
-		</plugins>
-	</build>
+
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.16</version>
+
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.16</version>
+        <configuration>
+          <configLocation>src/main/resources/checkstyle.xml</configLocation>
+
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+	<!-- <build> -->
+	<!-- <outputDirectory>target/classes</outputDirectory> -->
+	<!-- <finalName>artifactId-version</finalName> -->
+	<!-- <sourceDirectory>src/main/java</sourceDirectory> -->
+	<!-- <resources> -->
+	<!-- <resource> -->
+	<!-- <directory>src/main/resources</directory> -->
+	<!-- </resource> -->
+	<!-- </resources> -->
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <groupId>org.apache.maven.plugins</groupId> -->
+	<!-- <artifactId>maven-checkstyle-plugin</artifactId> -->
+	<!-- <version>2.16</version> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </build> -->
 </project>
